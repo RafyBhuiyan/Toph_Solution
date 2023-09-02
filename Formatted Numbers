@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main(){
+	char ra[30];
+	int i,j=0,k=0;
+	int new[40];
+	gets(ra);
+    for(i=strlen(ra)-1;i>=0;i--){
+        if(j%3==0&&j>0){
+            new[k++]=',';
+            new[k++]=ra[i];
+        }
+        else{
+            new[k++]=ra[i];
+        }
+        j++;
+    }
+    for(i=k-1;i>=0;i--){
+        printf("%c",new[i]);
+    }
+	return 0;
+}
