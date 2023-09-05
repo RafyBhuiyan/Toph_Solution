@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main(){
+    int n,start=0,i,num1=1,total,x=0;
+    scanf("%d",&n);
+    for(i=1;i<=n;i++){
+            x++;
+
+        total=num1+start;
+        start=num1;
+        num1=total;
+        if(x==n)
+        printf("%d  ",start);
+    }
+    return 0;
