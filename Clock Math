@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+    float h,m,hour,Angle;
+    scanf("%f",&h);
+    scanf("%f",&m);
+    float hs=h*30+m/2;
+    float M=m*6;
+        if(hs>M)
+          hour=hs-M;
+        else
+          hour=M-hs;
+       if(hour>180)
+        hour=360-hour;
+        printf("%f",hour);
+        return 0;
+}
