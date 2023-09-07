@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main(){
+    int data,i,j=0;
+    scanf("%d",&data);
+    int ra[data];
+    for(i=0;i<data;i++){
+        scanf("%d",&ra[i]);
+    }
+    for(i=1;i<data;i++){
+        if(ra[i-1]>ra[i])
+            j++;
+    }
+    if(j==0)
+        printf("Yes");
+    else
+        printf("No");
+    return 0;
+}
