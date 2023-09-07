@@ -1,0 +1,13 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int x,y,buy=0;
+    cin>>x>>y;
+    if(y%x)
+    {
+        buy=((y/x)+1)*x - y;
+    }
+    cout<<buy;
+    return 0;
+}
