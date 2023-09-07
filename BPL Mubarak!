@@ -1,0 +1,29 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int i,l,t,ball,over;
+    string ra;
+    cin>>t;
+    while(t--)
+    {
+        ball=0;
+        cin>>ra;
+        l=ra.length();
+        for(i=0;i<l;i++)
+            if(ra[i]=='O' ||(ra[i]>='0' && ra[i]<='6'))
+                ball++;
+        if(ball/6==1)
+            cout<<ball/6<<" OVER ";
+        else if(ball/6>1)
+            cout<<ball/6<<" OVERS ";
+        if(ball%6==1)
+            cout<<ball%6<<" BALL";
+        else if(ball%6)
+            cout<<ball%6<< " BALLS";
+        if(ball==0)
+            cout<<"0 BALL";
+        cout<<endl;
+    }
+    return 0;
+}
