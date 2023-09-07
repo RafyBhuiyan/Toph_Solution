@@ -1,0 +1,33 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int l,i,j,sum=0,num=0;
+    string ra;
+    char k;
+    cin>>ra;
+    l=ra.length();
+    sort(ra.begin(),ra.end());
+    k=ra[0];
+    for(i=0; i<l; i++)
+    {
+        sum=0;
+        if(ra[i]!='*')
+        {
+            for(j=i+1; j<l; j++)
+            {
+                if(ra[i]==ra[j]){
+                    ra[j]='*';
+                    sum++;
+                }
+            }
+        }
+        if(sum>num)
+        {
+            k=ra[i];
+            num=sum;
+        }
+    }
+    cout<<k;
+    return 0;
+}
