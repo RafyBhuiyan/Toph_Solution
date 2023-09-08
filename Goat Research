@@ -1,0 +1,32 @@
+#include<bits/stdc++.h>
+#include<string.h>
+#define ll long long int
+#define fastio ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+#define br <<"\n";
+#define for(i,n) for(i=0;i<n;i++)
+using namespace std;
+int main()
+{
+    int i,t,l=0,j;
+    string sa;
+    cin>>t;
+    int ra[t];
+    for(i,t){
+        cin>>sa;
+        ra[i]=sa.length();
+        if(ra[i]==2)
+            ra[i]++;
+        else if(ra[i]%2==0)
+            ra[i]--;
+        l=max(l,ra[i]);
+    }
+    for(i,t){
+            for(j,(l-ra[i])/2)
+                cout<<" ";
+            cout<<"b";
+            for(j,ra[i]-1)
+                cout<<"a";
+            cout br;
+    }
+    return 0;
+}
