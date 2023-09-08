@@ -1,0 +1,14 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int a,x,b=-1222,i;
+    cin>>x;
+    for(i=0;i<x;i++){
+        cin>>a;
+        if(b<a)
+            b=a;
+    }
+    cout<<b;
+    return 0;
+}
