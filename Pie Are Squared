@@ -1,0 +1,16 @@
+#include<bits/stdc++.h>
+#include<string.h>
+#define ll long long int
+#define fastio ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+#define br <<"\n";
+#define FOR(i,n) for(int i=0;i<n;i++)
+#define FORran(i,n,a) for(int i=n;i<a;i++)
+#define FORrev(i,n) for(int i = n-1; i >= 0; i--)
+using namespace std;
+int main()
+{
+    int a,i,j;
+    cin>>a;
+    printf("%0.9f",acos(-1)*a*a);
+    return 0;
+}
