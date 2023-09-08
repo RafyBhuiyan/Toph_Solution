@@ -1,0 +1,32 @@
+#include<bits/stdc++.h>
+#include<string.h>
+#define ll long long int
+#define fastio ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+#define br <<"\n";
+#define for(i,n) for(i=n-1;i>=0;i--)
+using namespace std;
+int main(){
+    int a,x,i,l;
+    cin>>a;
+    vector<int>ra;
+    while(a){
+        if(a>=500)
+            x=500;
+        else if(a>=100)
+            x=100;
+        else if(a>=50)
+            x=50;
+        else if(a>=10)
+            x=10;
+        else if(a>=5)
+            x=5;
+        else
+            x=1;
+        ra.push_back(x);
+        a-=x;
+    }
+    l=ra.size();
+    for(i,l)
+        cout<<ra[i]<<" ";
+    return 0;
+}
