@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+#include<string.h>
+#define ll long long int
+#define br <<"\n"
+#define For(i,n) for(int i=0;i<n;i++)
+#define Forran(i,n,a) for(int i=n;i<a;i++)
+#define Forrev(i,n) for(int i = n-1; i >= 0; i--)
+#define fastio ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+using namespace std;
+int main()
+{
+    fastio
+    int A11,A12,A21,A22,B11,B12,B21,B22,C11,C12,C21,C22;
+    cin>>A11>>A12>>A21>>A22>>B11>>B12>>B21>>B22;
+    C11=A11*B11+A12*B21;
+    C12=A11*B12+A12*B22;
+    C21=A21*B11+A22*B21;
+    C22=A21*B12+A22*B22;
+    cout<<C11<<" "<<C12 br<<C21<<" "<<C22 br;
+    return 0;
+}
